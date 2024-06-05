@@ -13,6 +13,8 @@ return {
         "typescript-language-server",
         "css-lsp",
         "pyright",
+        "black",
+        "cspell",
       })
     end,
   },
@@ -46,8 +48,8 @@ return {
           single_file_support = true,
           settings = {
             pyright = {
-              disableLanguageServices = false,
-              disableOrganizeImports = false,
+              disableLanguageServices = true,
+              disableOrganizeImports = true,
             },
             python = {
               analysis = {

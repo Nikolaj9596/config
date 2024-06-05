@@ -12,9 +12,6 @@ keymap("n", "<S-l>", "<C-w>l", opts)
 keymap("n", "+", "<C-a>", opts)
 keymap("n", "-", "<C-x>", opts)
 
--- Delete a word backwards
-keymap("n", "dw", "vb_d", opts)
-
 -- Jumplist
 keymap("n", "<C-m>", "<C-i>", opts)
 
@@ -28,7 +25,9 @@ keymap("n", "ss", ":split<Return>", opts)
 keymap("n", "sv", ":vsplit<Return>", opts)
 
 -- Leader
-keymap("n", "<leader>w", ":w<cr>", opts)
+keymap("n", "<leader>w", ":update<cr>", opts)
+keymap("n", "<leader>q", ":quit<cr>", opts)
+keymap("n", "<leader>Q", ":qa<cr>", opts)
 
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)

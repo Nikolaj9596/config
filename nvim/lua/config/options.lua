@@ -2,9 +2,9 @@ vim.scriptencoding = "utf-8"
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
 
+vim.opt.spell = true
+vim.opt.spelllang = { "en", "ru" }
 vim.opt.number = true
-vim.opt.setlocal = "spell"
-vim.opt.spelllang = "en_us"
 vim.opt.title = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
